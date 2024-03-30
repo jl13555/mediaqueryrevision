@@ -171,9 +171,6 @@ button:hover{
 }
 
 @media only screen and (max-width: 1000px){
-	body{
-		background-color: pink;
-	}
 	.linkContainer{
 		gap: 10%;
 	}
