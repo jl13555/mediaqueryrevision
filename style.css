@@ -1,16 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
 
-@media only screen and (max-width: 1000px){
-	body{
-		background-color: pink;
-	}
-	div.linkContainer{
-		gap: 10%;
-	}
-	div.imageClass{
-		height: 10vh;
-	}
+.imageClass{
+	height: 75vh;
+	width: auto;
+	display: block;
+	opacity: 1;
+  transition: .5s ease;
+ 	backface-visibility: hidden;
+ 	object-fit: contain;
 }
+
 body{
 	font-family: "DM Serif Display", sans-serif;
 	padding: 0;
@@ -104,15 +103,6 @@ h3{
 	padding-bottom: 20px;
 }
 
-.imageClass{
-	height: 75vh;
-	width: auto;
-	display: block;
-	opacity: 1;
-  transition: .5s ease;
- 	backface-visibility: hidden;
-}
-
 .imageDescription{
 	padding-top: 30px;
 }
@@ -178,4 +168,16 @@ button{
 button:hover{
 	background-color: #FF2079;
 	color: #04005E;
+}
+
+@media only screen and (max-width: 1000px){
+	body{
+		background-color: pink;
+	}
+	.linkContainer{
+		gap: 10%;
+	}
+	.imageClass{
+		height: 30vh;
+	}
 }
