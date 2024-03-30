@@ -177,4 +177,7 @@ button:hover{
 	.imageClass{
 		height: 30vh;
 	}
+	.text{
+		font-size: 8px;
+	}
 }
