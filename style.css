@@ -10,6 +10,16 @@
  	object-fit: contain;
 }
 
+.imageClassWide{
+	height: 75vh;
+	width: auto;
+	display: block;
+	opacity: 1;
+  transition: .5s ease;
+ 	backface-visibility: hidden;
+ 	object-fit: contain;
+}
+
 body{
 	font-family: "DM Serif Display", sans-serif;
 	padding: 0;
@@ -169,15 +179,44 @@ button:hover{
 	background-color: #FF2079;
 	color: #04005E;
 }
-
 @media only screen and (max-width: 1000px){
 	.linkContainer{
 		gap: 10%;
 	}
+}
+@media only screen and (max-width: 850px){
+	.linkContainer{
+		gap: 10%;
+	}
+	.galleryDiv{
+		padding-top: 20%;
+	}
 	.imageClass{
+		height: 60vh;
+	}
+	.imageClassWide{
 		height: 30vh;
 	}
 	.text{
-		font-size: 8px;
+		font-size: 14px;
+	}
+	.picturetext{
+		all: revert;
+		display: grid;
+		grid-template-columns: auto 400px auto;
+		grid-template-rows: 1fr 1fr;
+	}
+	.aboutImage{
+
+	}
+	.aboutImageDiv{
+		all: revert;
+		grid-column: 2/3;
+		grid-row: 2/3;
+	}
+	.textbox{
+		all: revert;
+		grid-column: 2/3;
+		grid-row: 1/2;
 	}
 }
